@@ -1,0 +1,87 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "csgo_effects.vfx"
+
+	//---- Color ----
+	g_flColorBoost "45.000"
+	g_vColorTint "[0.356863 0.501961 0.823529 0.000000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/default/default_color.tga"
+
+	//---- Distance Fade ----
+	g_flFadeDistance "0.000"
+	g_flFadeFalloff "1.000"
+	g_flFadeMax "1.000"
+	g_flFadeMin "0.000"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Fresnel ----
+	g_flFresnelExponent "0.001"
+	g_flFresnelFalloff "1.000"
+	g_flFresnelMax "1.000"
+	g_flFresnelMin "0.000"
+
+	//---- Mask 1 ----
+	g_vMask1PanSpeed "[0.000 0.000]"
+	g_vMask1Scale "[1.000 1.000]"
+	TextureMask1 "materials/models/pawnshop/pawnshop_alpha.png"
+
+	//---- Mask 2 ----
+	g_vMask2PanSpeed "[0.000 0.000]"
+	g_vMask2Scale "[1.000 1.000]"
+	TextureMask2 "materials/default/default_mask.tga"
+
+	//---- Mask 3 ----
+	g_vMask3PanSpeed "[0.000 0.000]"
+	g_vMask3Scale "[1.000 1.000]"
+	TextureMask3 "materials/default/default_mask.tga"
+
+	//---- Texture Address Mode ----
+	g_nTextureAddressModeU "0" // Wrap
+	g_nTextureAddressModeV "0" // Wrap
+
+	//---- Translucent ----
+	g_flOpacityScale "1.000"
+	TextureTranslucency "materials/default/default_trans.tga"
+
+	DynamicParams
+	{
+		g_vColorTint "r = sin(time()*1);\nr = clamp(r,0,0.7);\n\nb = cos(time()*2);\nb = clamp(b,0,0.5);\n\ntempVar1 = float3(r,0.5,b);\n\nreturn tempVar1;"
+	}
+
+
+	VariableState
+	{
+		"Color"
+		{
+		}
+		"Distance Fade"
+		{
+		}
+		"Fog"
+		{
+		}
+		"Fresnel"
+		{
+		}
+		"Mask 1"
+		{
+		}
+		"Mask 2"
+		{
+		}
+		"Mask 3"
+		{
+		}
+		"Texture Address Mode"
+		{
+		}
+		"Translucent"
+		{
+		}
+	}
+}
