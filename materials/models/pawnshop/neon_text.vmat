@@ -5,7 +5,7 @@ Layer0
 	shader "csgo_effects.vfx"
 
 	//---- Color ----
-	g_flColorBoost "45.000"
+	g_flColorBoost "25.000"
 	g_vColorTint "[0.356863 0.501961 0.823529 0.000000]"
 	g_vTexCoordScrollSpeed "[0.000 0.000]"
 	TextureColor "materials/default/default_color.tga"
