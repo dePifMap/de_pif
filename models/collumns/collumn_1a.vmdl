@@ -21,6 +21,28 @@
 					},
 				]
 			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsMeshFromRender"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						tool_material = ""
+						renderMeshList = [  ]
+						simplification_params = 
+						{
+							qemError = 0.0
+							maxMeshVertices = 0
+							small_element_threshold = 0.0
+							thin_element_threshold = 0.0
+						}
+					},
+				]
+				leave_body_collision_unmodified = false
+			},
 		]
 		model_archetype = ""
 		primary_associated_entity = ""

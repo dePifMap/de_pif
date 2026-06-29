@@ -34,7 +34,7 @@ Layer0
 
 	//---- Self Illum ----
 	g_flSelfIllumAlbedoFactor "0.000"
-	g_flSelfIllumBrightness "4.500"
+	g_flSelfIllumBrightness "3.800"
 	g_flSelfIllumScale "1.000"
 	g_vSelfIllumScrollSpeed "[0.000 0.000]"
 	g_vSelfIllumTint "[1.000000 1.000000 1.000000 0.000000]"
@@ -46,7 +46,7 @@ Layer0
 
 	DynamicParams
 	{
-		g_vSelfIllumTint "r = sin(time()*1);\nr = clamp(r,0,0.7);\n\nb = cos(time()*2);\nb = clamp(b,0,0.5);\n\ntempVar1 = float3(r,0.5,b);\n\nreturn tempVar1;"
+		g_vSelfIllumTint "r = sin(time());\nr = clamp(r, 0.3,0.8);\ng = cos(time());\ng = clamp(g, 0.3,0.8);\n\nr_fin = min(r,g);\ng_fin = max(r,g);\n\n\ntempVar1 = float3(r_fin,1,g_fin);\n\nreturn tempVar1;"
 	}
 
 

@@ -154,6 +154,29 @@
 		]
 	}
 
+	"announcements.ketal.outrooms" = 
+	{
+		base = "amb.base"
+		volume = 500.000000
+		pitch = 1
+		vsnd_files_track_01 = 
+		[
+			"sounds/ktl_snd/announcement.vsnd"
+		]
+		use_time_volume_mapping_curve = true
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 80.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				2000.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+	}
+
 
 
 

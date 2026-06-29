@@ -5,8 +5,8 @@ Layer0
 	shader "csgo_effects.vfx"
 
 	//---- Color ----
-	g_flColorBoost "25.000"
-	g_vColorTint "[0.356863 0.501961 0.823529 0.000000]"
+	g_flColorBoost "30.000"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
 	g_vTexCoordScrollSpeed "[0.000 0.000]"
 	TextureColor "materials/default/default_color.tga"
 
@@ -50,7 +50,7 @@ Layer0
 
 	DynamicParams
 	{
-		g_vColorTint "r = sin(time()*1);\nr = clamp(r,0,0.7);\n\nb = cos(time()*2);\nb = clamp(b,0,0.5);\n\ntempVar1 = float3(r,0.5,b);\n\nreturn tempVar1;"
+		g_vColorTint "r = sin(time());\nr = clamp(r, 0.3,0.8);\ng = cos(time());\ng = clamp(g, 0.3,0.8);\n\nr_fin = min(r,g);\ng_fin = max(r,g);\n\n\ntempVar1 = float3(r_fin,1,g_fin);\n\nreturn tempVar1;"
 	}
 
 
